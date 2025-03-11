@@ -4,6 +4,10 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Navneet's Landing Page</title>
+        <link rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+            integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+            crossorigin="anonymous" referrerpolicy="no-referrer" />
         <link rel="stylesheet" href="style.css">
     </head>
     <body>
@@ -11,37 +15,41 @@
         <!-- Header Section -->
         <header class="header">
             <nav class="navbar">
-                <!-- logo -->
-                <div class="logo">
-                    <img src="./assets/logo.png" alt>
-                </div>
-                <!-- nav links -->
-                <ul class="nav-links">
+                <img class="logo" src="./assets/logo.png" alt="Logo">
+
+                <ul class="nav-links" id="nav">
                     <li><a href="#">Home</a></li>
                     <li><a href="#">Timetable</a></li>
                     <li><a href="#">Programs</a></li>
                     <li><a href="#">Gallery</a></li>
                     <li><a href="#">Contact Us</a></li>
                 </ul>
-                <!-- nav-icons -->
+
                 <div class="nav-icons">
-                    <button class="icon-btn"><img
-                            src="./assets/facebookLogo.png" alt></button>
+                    <button class="icon-btn"><img src="assets/facebookLogo.png"
+                            alt="Facebook"></button>
                     <button class="icon-btn"><img src="assets/instaLogo.png"
-                            alt></button>
+                            alt="Instagram"></button>
                     <button class="icon-btn"><img
-                            src="assets/linked-in-logo.png" alt></button>
+                            src="assets/linked-in-logo.png"
+                            alt="LinkedIn"></button>
                     <button class="icon-btn"><img src="assets/twitterLogo.png"
-                            alt></button>
+                            alt="Twitter"></button>
                     <button class="icon-btn"><img src="assets/youtubeLogo.png"
-                            alt></button>
+                            alt="YouTube"></button>
+                </div>
+
+                <div class="toggle" id="toggleBtn">
+                    <i id="menu-icon" class="fa-solid fa-bars"></i>
                 </div>
             </nav>
         </header>
 
+
+
         <!-- Hero Section -->
         <section class="hero">
-            <!-- heading -->
+            <!-- heading section-->
             <div class="heading">
                 <h1>Welcome to the <span class="text-style"> 9To9
                         school</span></h1>
@@ -50,6 +58,8 @@
             </div>
 
             <main class="hero-main">
+
+                <!-- stats -->
                 <div class="stats">
                     <span>
                         <p class="stat-num">82K</p>
@@ -78,6 +88,7 @@
                     </p>
                     <button id="hero-cta-btn">Apply Today</button>
                 </div>
+
             </main>
 
         </section>
@@ -117,7 +128,8 @@
             <p>Our platform offers a range of features designed to make learning
                 accessible, flexible, and tailored to your child's unique
                 needs.</p>
-
+ 
+            <!-- why choose us-features -->
             <section class="feature-section">
                 <!-- features -->
                 <div class="feature-list">
@@ -409,7 +421,7 @@
         <div class="contact">
 
             <!-- left side image -->
-            <img class="contact-img" src="./assets/phone2.png" alt="image">
+            <img class="contact-img" src="./assets/phone2.png" alt>
 
             <!-- contact form -->
             <div class="contact-form">
@@ -453,5 +465,6 @@
 
         </div>
 
+        <script src="script.js"></script>
     </body>
 </html>
