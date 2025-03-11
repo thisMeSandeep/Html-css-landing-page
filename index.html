@@ -8,7 +8,10 @@
             href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
             integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
             crossorigin="anonymous" referrerpolicy="no-referrer" />
-        <link rel="stylesheet" href="style.css">
+        <link
+            rel="stylesheet"
+            href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+        <link rel="stylesheet" href="style.css" />
     </head>
     <body>
 
@@ -359,53 +362,123 @@
                 <button class="review-btn">Give Us Review</button>
             </div>
 
-            <div class="reviews-container">
-                <div class="review-card">
-                    <div class="person-info">
-                        <img src="./assets/person.png" alt="Parent"
-                            class="profile-img">
-                        <span>
-                            <h3>Rajesh Kumar</h3>
-                            <p class="parent-info">Parent of a 9-year-old</p>
-                        </span>
+            <!-- review container swiper -->
+            <div class="swiper reviews-container">
+                <!-- slider wrapper -->
+                <div class="swiper-wrapper">
+                    <!-- Slides -->
+                    <div class="swiper-slide">
+                        <div class="review-card">
+                            <div class="person-info">
+                                <img src="./assets/person.png" alt="Parent"
+                                    class="profile-img">
+                                <span>
+                                    <h3>Rajesh Kumar</h3>
+                                    <p class="parent-info">Parent of a
+                                        9-year-old</p>
+                                </span>
+                            </div>
+                            <p>
+                                This platform has transformed my children's
+                                learning
+                                experience. The personalized approach and
+                                flexible
+                                scheduling have made education enjoyable for
+                                them.
+                            </p>
+                        </div>
                     </div>
-                    <p>
-                        This platform has transformed my children's learning
-                        experience. The personalized approach and flexible
-                        scheduling have made education enjoyable for them.
-                    </p>
-                </div>
-                <div class="review-card">
-                    <div class="person-info">
-                        <img src="./assets/person.png" alt="Parent"
-                            class="profile-img">
-                        <span>
-                            <h3>Rajesh Kumar</h3>
-                            <p class="parent-info">Parent of a 9-year-old</p>
-                        </span>
+                    <div class="swiper-slide">
+                        <div class="review-card">
+                            <div class="person-info">
+                                <img src="./assets/person.png" alt="Parent"
+                                    class="profile-img">
+                                <span>
+                                    <h3>Rajesh Kumar</h3>
+                                    <p class="parent-info">Parent of a
+                                        9-year-old</p>
+                                </span>
+                            </div>
+                            <p>
+                                This platform has transformed my children's
+                                learning
+                                experience. The personalized approach and
+                                flexible
+                                scheduling have made education enjoyable for
+                                them.
+                            </p>
+                        </div>
                     </div>
-                    <p>
-                        This platform has transformed my children's learning
-                        experience. The personalized approach and flexible
-                        scheduling have made education enjoyable for them.
-                    </p>
-                </div>
-                <div class="review-card">
-                    <div class="person-info">
-                        <img src="./assets/person.png" alt="Parent"
-                            class="profile-img">
-                        <span>
-                            <h3>Rajesh Kumar</h3>
-                            <p class="parent-info">Parent of a 9-year-old</p>
-                        </span>
+                    <div class="swiper-slide">
+                        <div class="review-card">
+                            <div class="person-info">
+                                <img src="./assets/person.png" alt="Parent"
+                                    class="profile-img">
+                                <span>
+                                    <h3>Rajesh Kumar</h3>
+                                    <p class="parent-info">Parent of a
+                                        9-year-old</p>
+                                </span>
+                            </div>
+                            <p>
+                                This platform has transformed my children's
+                                learning
+                                experience. The personalized approach and
+                                flexible
+                                scheduling have made education enjoyable for
+                                them.
+                            </p>
+                        </div>
                     </div>
-                    <p>
-                        This platform has transformed my children's learning
-                        experience. The personalized approach and flexible
-                        scheduling have made education enjoyable for them.
-                    </p>
+                    <div class="swiper-slide">
+                        <div class="review-card">
+                            <div class="person-info">
+                                <img src="./assets/person.png" alt="Parent"
+                                    class="profile-img">
+                                <span>
+                                    <h3>Rajesh Kumar</h3>
+                                    <p class="parent-info">Parent of a
+                                        9-year-old</p>
+                                </span>
+                            </div>
+                            <p>
+                                This platform has transformed my children's
+                                learning
+                                experience. The personalized approach and
+                                flexible
+                                scheduling have made education enjoyable for
+                                them.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="review-card">
+                            <div class="person-info">
+                                <img src="./assets/person.png" alt="Parent"
+                                    class="profile-img">
+                                <span>
+                                    <h3>Rajesh Kumar</h3>
+                                    <p class="parent-info">Parent of a
+                                        9-year-old</p>
+                                </span>
+                            </div>
+                            <p>
+                                This platform has transformed my children's
+                                learning
+                                experience. The personalized approach and
+                                flexible
+                                scheduling have made education enjoyable for
+                                them.
+                            </p>
+                        </div>
+                    </div>
                 </div>
+                <!-- If we need navigation buttons -->
+                <div class="swiper-button-prev"></div>
+                <div class="swiper-button-next"></div>
             </div>
+            <!-- review container ends here -->
+
         </section>
 
         <!-- galary Section -->
@@ -469,6 +542,9 @@
 
         </div>
 
+        <!-- Swiper JS -->
+        <script
+            src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
         <script src="script.js"></script>
     </body>
 </html>
