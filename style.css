@@ -531,6 +531,14 @@ body {
   justify-content: center;
   align-items: center;
 }
+
+.reviews-container{
+  position: absolute;
+  bottom:20px;
+  left: 0;
+  transform: scaleX(1.1);
+}
+
 .review-card {
   background: #f5f5f5;
   padding: 20px;
@@ -825,6 +833,7 @@ textarea {
   .review-btn {
     position: relative;
   }
+
   .reviews-container {
     position: relative;
   }
