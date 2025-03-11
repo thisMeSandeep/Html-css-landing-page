@@ -112,7 +112,7 @@ body {
 
 .swiper-container {
   width: 600px;
-  padding-top: 150px;
+  padding-top: 50px;
   padding-bottom: 50px;
 }
 .swiper-slide {
@@ -763,10 +763,15 @@ textarea {
   }
 
   .swiper-container{
-    width: 300px;
+    width:350px;
+    overflow-x: hidden;
   }
   .swiper-slide{
     width: 150px;
+  }
+
+  .swiper-wrapper{
+    width: 100%;
   }
 
   #hero-para {
