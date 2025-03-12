@@ -9,7 +9,6 @@ toggle.addEventListener("click", () => {
 
 //review slider
 let swiper = new Swiper(".reviews-container", {
-  // Changed from .mySwiper to .reviews-container
   slidesPerView: 1,
   spaceBetween: 10,
   pagination: {
@@ -17,7 +16,6 @@ let swiper = new Swiper(".reviews-container", {
     clickable: true,
   },
   navigation: {
-    // Add navigation to make prev/next buttons work
     nextEl: ".swiper-button-next",
     prevEl: ".swiper-button-prev",
   },
@@ -27,11 +25,11 @@ let swiper = new Swiper(".reviews-container", {
       spaceBetween: 20,
     },
     768: {
-      slidesPerView: 3, // 3 slides instead of 4 for better layout
+      slidesPerView: 3,
       spaceBetween: 30,
     },
     1024: {
-      slidesPerView: 4, // 4 slides instead of 5 for better spacing
+      slidesPerView: 4,
       spaceBetween: 40,
     },
   },
@@ -53,4 +51,20 @@ let swiper2 = new Swiper(".swiper-container", {
     initialSlide: 3,
     slideShadows: true,
   },
+});
+
+// accordian js
+document.querySelectorAll(".feature-item").forEach((item) => {
+  item.addEventListener("click", () => {
+    const answer = item.querySelector(".accor-ans");
+    const isActive = item.classList.contains("active");
+    document.querySelectorAll(".feature-item").forEach((el) => {
+      el.classList.remove("active");
+      el.querySelector(".accor-ans").style.display = "none";
+    });
+    if (!isActive) {
+      item.classList.add("active");
+      answer.style.display = "block";
+    }
+  });
 });

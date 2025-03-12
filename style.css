@@ -182,13 +182,13 @@ body {
   margin-top: 2rem;
   padding: 2rem 4.5rem;
 }
-.why-choose-us h1 {
+.why-choose-us > h1 {
   text-align: center;
   font-size: 5rem;
   font-weight: 600;
   color: #262626;
 }
-.why-choose-us p {
+.why-choose-us > p {
   text-align: center;
   font-size: 1.8rem;
   font-weight: 400;
@@ -215,17 +215,29 @@ body {
 }
 
 .feature-item {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 10px 10px;
-  border-radius: 8px;
+  border-bottom: 1px solid #ccc;
+  padding: 10px;
+  cursor: pointer;
 }
 
-.feature-item p {
-  font-size: 1.2rem;
-  font-weight: 600;
-  color: #1a1a1a;
+.accor-ques {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.accor-ans {
+  opacity: 0;
+  transform: translateY(-10px);
+  overflow: hidden;
+  display: none;
+  transition: opacity 0.3s ease, transform 0.3s ease;
+}
+
+.feature-item.active .accor-ans {
+  display: block;
+  opacity: 1;
+  transform: translateY(0);
 }
 
 .feature-item:nth-child(1) {
@@ -762,15 +774,15 @@ textarea {
     margin-top: 5rem;
   }
 
-  .swiper-container{
-    width:350px;
+  .swiper-container {
+    width: 350px;
     overflow-x: hidden;
   }
-  .swiper-slide{
+  .swiper-slide {
     width: 150px;
   }
 
-  .swiper-wrapper{
+  .swiper-wrapper {
     width: 100%;
   }
 
